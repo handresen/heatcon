@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name EL357N_A__TA_-G)(type Legacy)(uri ${KIPRJMOD}/libs/EL357N_A__TA_-G.lib)(options "")(descr ""))
+  (lib (name HCLib)(type Legacy)(uri ${KIPRJMOD}/libs/HCLib.lib)(options "")(descr ""))
+)

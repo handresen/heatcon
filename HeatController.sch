@@ -1,0 +1,1331 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:IRF3205 Q1
+U 1 1 5F7DE469
+P 5250 2250
+F 0 "Q1" H 5455 2296 50  0000 L CNN
+F 1 "IRF3205" H 5455 2205 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5500 2175 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 5250 2250 50  0001 L CNN
+	1    5250 2250
+	1    0    0    -1  
+$EndComp
+Text Label 800  850  0    50   ~ 0
+24V
+$Comp
+L Device:R Rpd1
+U 1 1 5F7E79DD
+P 5050 2400
+F 0 "Rpd1" H 4750 2450 50  0000 L CNN
+F 1 "20k" H 4850 2350 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 4980 2400 50  0001 C CNN
+F 3 "~" H 5050 2400 50  0001 C CNN
+	1    5050 2400
+	1    0    0    -1  
+$EndComp
+Text Label 1550 2550 0    50   ~ 0
+3V3
+Text Label 2550 2450 0    50   ~ 0
+GND2
+$Comp
+L Connector:Screw_Terminal_01x02 JP1
+U 1 1 5F7FA364
+P 1000 850
+F 0 "JP1" H 1080 842 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 1080 751 50  0000 L CNN
+F 2 "HeatController:TerminalBlock_bornier-2_P5.08mm_tight" H 1000 850 50  0001 C CNN
+F 3 "~" H 1000 850 50  0001 C CNN
+	1    1000 850 
+	1    0    0    -1  
+$EndComp
+Text Label 800  950  0    50   ~ 0
+GND
+Text Label 6000 1900 0    50   ~ 0
+24V
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5F7FB224
+P 6200 1900
+F 0 "J1" H 6280 1892 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6280 1801 50  0000 L CNN
+F 2 "HeatController:TerminalBlock_bornier-2_P5.08mm_tight" H 6200 1900 50  0001 C CNN
+F 3 "~" H 6200 1900 50  0001 C CNN
+	1    6200 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rlj1
+U 1 1 5F80302C
+P 5550 1850
+F 0 "Rlj1" H 5620 1896 50  0000 L CNN
+F 1 "7k" H 5620 1805 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 5480 1850 50  0001 C CNN
+F 3 "~" H 5550 1850 50  0001 C CNN
+	1    5550 1850
+	1    0    0    -1  
+$EndComp
+Text Label 5250 1700 0    50   ~ 0
+24V
+$Comp
+L Device:R Rioc1
+U 1 1 5F975523
+P 3550 1850
+F 0 "Rioc1" V 3650 1750 50  0000 L CNN
+F 1 "400" V 3450 1750 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 3480 1850 50  0001 C CNN
+F 3 "~" H 3550 1850 50  0001 C CNN
+	1    3550 1850
+	0    1    1    0   
+$EndComp
+Text Label 3700 2050 0    50   ~ 0
+GND2
+$Comp
+L Diode:1N4007 D1
+U 1 1 5F97749E
+P 5850 1850
+F 0 "D1" V 5700 1900 50  0000 L CNN
+F 1 "1N4007" V 5800 1900 50  0000 L CNN
+F 2 "HeatController:DO-214AC" H 5850 1675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5850 1850 50  0001 C CNN
+	1    5850 1850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP C1
+U 1 1 5F97DE13
+P 1100 2700
+F 0 "C1" H 1218 2746 50  0000 L CNN
+F 1 "100uF" H 1218 2655 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D6.3mm_P2.50mm" H 1138 2550 50  0001 C CNN
+F 3 "~" H 1100 2700 50  0001 C CNN
+	1    1100 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 2450 2900 2450
+Wire Wire Line
+	5550 2000 5350 2000
+Wire Wire Line
+	5350 2000 5350 2050
+Connection ~ 5550 2000
+Wire Wire Line
+	5350 2550 5350 2450
+$Comp
+L EL357N_A__TA_-G:EL357N(A)(TA)-G U_OC1
+U 1 1 5F98B569
+P 4200 1950
+F 0 "U_OC1" H 4200 2320 50  0000 C CNN
+F 1 "EL357N(A)(TA)-G" H 4200 2229 50  0000 C CNN
+F 2 "libs:SOP254P700X200-4N" H 4200 1950 50  0001 L BNN
+F 3 "IPC-7351B" H 4200 1950 50  0001 L BNN
+F 4 "EL357N_A__TA_-G" H 4200 1950 50  0001 L BNN "Field4"
+F 5 "SOP-4 Everlight" H 4200 1950 50  0001 L BNN "Field5"
+F 6 "Optocoupler [Everlight Electronics] EL357N_A__TA_-G Optocoupler" H 4200 1950 50  0001 L BNN "Field6"
+F 7 "0.10 USD" H 4200 1950 50  0001 L BNN "Field7"
+F 8 "Good" H 4200 1950 50  0001 L BNN "Field8"
+F 9 "Everlight" H 4200 1950 50  0001 L BNN "Field9"
+	1    4200 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 1850 3800 1850
+Connection ~ 3700 1850
+Wire Wire Line
+	3300 1850 3400 1850
+Wire Wire Line
+	1100 2550 1550 2550
+$Comp
+L Device:C Cboot1
+U 1 1 5F9B0A10
+P 3000 6100
+F 0 "Cboot1" H 3115 6146 50  0000 L CNN
+F 1 "100nF" H 3115 6055 50  0000 L CNN
+F 2 "HeatController:C_0805_H" H 3038 5950 50  0001 C CNN
+F 3 "~" H 3000 6100 50  0001 C CNN
+	1    3000 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D7
+U 1 1 5F9B1A7B
+P 3400 6550
+F 0 "D7" V 3354 6630 50  0000 L CNN
+F 1 "600mV" V 3445 6630 50  0000 L CNN
+F 2 "HeatController:SOD-123EP" H 3400 6550 50  0001 C CNN
+F 3 "~" H 3400 6550 50  0001 C CNN
+	1    3400 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 5F9B2D19
+P 4000 6400
+F 0 "L1" V 3819 6400 50  0000 C CNN
+F 1 "15uH" V 3910 6400 50  0000 C CNN
+F 2 "HeatController:SRN_INDUCTOR" H 4000 6400 50  0001 C CNN
+F 3 "~" H 4000 6400 50  0001 C CNN
+	1    4000 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5F9B444C
+P 3400 6700
+F 0 "#PWR0102" H 3400 6450 50  0001 C CNN
+F 1 "GND" H 3405 6527 50  0000 C CNN
+F 2 "" H 3400 6700 50  0001 C CNN
+F 3 "" H 3400 6700 50  0001 C CNN
+	1    3400 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 6400 3850 6400
+Wire Wire Line
+	3000 6250 3000 6400
+Wire Wire Line
+	3000 6400 3400 6400
+Connection ~ 3400 6400
+Wire Wire Line
+	2500 5950 3000 5950
+Wire Wire Line
+	2500 5950 2500 6200
+Wire Wire Line
+	2500 6400 3000 6400
+Connection ~ 3000 6400
+$Comp
+L Device:R Rfbt1
+U 1 1 5F9BD8B4
+P 4150 6550
+F 0 "Rfbt1" H 4220 6596 50  0000 L CNN
+F 1 "64.9k" H 4220 6505 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 4080 6550 50  0001 C CNN
+F 3 "~" H 4150 6550 50  0001 C CNN
+	1    4150 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rfbb1
+U 1 1 5F9BDF63
+P 4150 7000
+F 0 "Rfbb1" H 4220 7046 50  0000 L CNN
+F 1 "R" H 4220 6955 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 4080 7000 50  0001 C CNN
+F 3 "~" H 4150 7000 50  0001 C CNN
+	1    4150 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6600 3200 6600
+Wire Wire Line
+	3200 6600 3200 7100
+Wire Wire Line
+	3200 7100 3900 7100
+Wire Wire Line
+	3900 7100 3900 6850
+Wire Wire Line
+	3900 6850 4150 6850
+Wire Wire Line
+	4150 6700 4150 6850
+Connection ~ 4150 6850
+$Comp
+L power:GND #PWR0104
+U 1 1 5F9C2B2A
+P 4150 7150
+F 0 "#PWR0104" H 4150 6900 50  0001 C CNN
+F 1 "GND" H 4155 6977 50  0000 C CNN
+F 2 "" H 4150 7150 50  0001 C CNN
+F 3 "" H 4150 7150 50  0001 C CNN
+	1    4150 7150
+	1    0    0    -1  
+$EndComp
+Text Label 1050 6250 0    50   ~ 0
+24V
+Wire Wire Line
+	1050 6250 1600 6250
+$Comp
+L Device:C Cin1
+U 1 1 5F9C3F40
+P 1050 6400
+F 0 "Cin1" H 1165 6446 50  0000 L CNN
+F 1 "4.7uF" H 1165 6355 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206" H 1088 6250 50  0001 C CNN
+F 3 "~" H 1050 6400 50  0001 C CNN
+	1    1050 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5F9C4BE6
+P 1050 6550
+F 0 "#PWR0105" H 1050 6300 50  0001 C CNN
+F 1 "GND" H 1055 6377 50  0000 C CNN
+F 2 "" H 1050 6550 50  0001 C CNN
+F 3 "" H 1050 6550 50  0001 C CNN
+	1    1050 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F9C4F7B
+P 2500 6700
+F 0 "#PWR0106" H 2500 6450 50  0001 C CNN
+F 1 "GND" H 2505 6527 50  0000 C CNN
+F 2 "" H 2500 6700 50  0001 C CNN
+F 3 "" H 2500 6700 50  0001 C CNN
+	1    2500 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C Cout1
+U 1 1 5F9C53E7
+P 4800 6750
+F 0 "Cout1" H 4915 6796 50  0000 L CNN
+F 1 "22uF" H 4915 6705 50  0000 L CNN
+F 2 "HeatController:C_0805_H" H 4838 6600 50  0001 C CNN
+F 3 "~" H 4800 6750 50  0001 C CNN
+	1    4800 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 5F9C6781
+P 4800 6900
+F 0 "#PWR0107" H 4800 6650 50  0001 C CNN
+F 1 "GND" H 4805 6727 50  0000 C CNN
+F 2 "" H 4800 6900 50  0001 C CNN
+F 3 "" H 4800 6900 50  0001 C CNN
+	1    4800 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 6400 4800 6400
+Wire Wire Line
+	4800 6400 4800 6600
+Connection ~ 4150 6400
+$Comp
+L Device:C Cout2
+U 1 1 5F9DAB1E
+P 5250 6750
+F 0 "Cout2" H 5365 6796 50  0000 L CNN
+F 1 "22uF" H 5365 6705 50  0000 L CNN
+F 2 "HeatController:C_0805_H" H 5288 6600 50  0001 C CNN
+F 3 "~" H 5250 6750 50  0001 C CNN
+	1    5250 6750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 6400 5250 6400
+Connection ~ 4800 6400
+Wire Wire Line
+	5250 6600 5250 6400
+Connection ~ 5250 6400
+Wire Wire Line
+	5250 6400 5550 6400
+$Comp
+L power:GND #PWR0108
+U 1 1 5F9DD46D
+P 5250 6900
+F 0 "#PWR0108" H 5250 6650 50  0001 C CNN
+F 1 "GND" H 5255 6727 50  0000 C CNN
+F 2 "" H 5250 6900 50  0001 C CNN
+F 3 "" H 5250 6900 50  0001 C CNN
+	1    5250 6900
+	1    0    0    -1  
+$EndComp
+Text Label 2500 6400 0    50   ~ 0
+SW
+Text Label 5550 6400 0    50   ~ 0
+3V3
+$Comp
+L WemosMiniGit:WeMos_D1_mini U1
+U 1 1 5F7F24C1
+P 2050 2200
+F 0 "U1" H 2050 2943 60  0000 C CNN
+F 1 "WeMos_D1_mini" H 2050 2837 60  0000 C CNN
+F 2 "Wemos git:wemos-d1-mini-with-pin-header" H 2600 1500 60  0001 C CNN
+F 3 "http://www.wemos.cc/Products/d1_mini.html" H 2050 2731 60  0000 C CNN
+	1    2050 2200
+	1    0    0    -1  
+$EndComp
+Text Label 2550 2550 0    50   ~ 0
+5V
+$Comp
+L Device:R E_33
+U 1 1 5F9E1235
+P 2800 800
+F 0 "E_33" H 2870 846 50  0000 L CNN
+F 1 "0" H 2870 755 50  0000 L CNN
+F 2 "HeatController:R_0805_SHORT" V 2730 800 50  0001 C CNN
+F 3 "~" H 2800 800 50  0001 C CNN
+	1    2800 800 
+	1    0    0    -1  
+$EndComp
+Text Label 2800 650  0    50   ~ 0
+GND2
+Text Label 4700 1850 0    50   ~ 0
+24V
+$Comp
+L Device:R Roo1
+U 1 1 5F9E6EBF
+P 4850 2050
+F 0 "Roo1" V 4950 1900 50  0000 L CNN
+F 1 "20k" V 4750 1950 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 4780 2050 50  0001 C CNN
+F 3 "~" H 4850 2050 50  0001 C CNN
+	1    4850 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5050 2050 5000 2050
+Wire Wire Line
+	5050 2050 5050 2250
+Connection ~ 5050 2250
+Text Label 9450 1900 0    50   ~ 0
+24V
+Wire Wire Line
+	5550 2000 5850 2000
+Wire Wire Line
+	5850 2000 6000 2000
+Connection ~ 5850 2000
+Wire Wire Line
+	5850 1700 6000 1700
+Wire Wire Line
+	6000 1700 6000 1900
+$Comp
+L Device:LED Dlpow1
+U 1 1 5FA49ECB
+P 2250 750
+F 0 "Dlpow1" V 2289 632 50  0000 R CNN
+F 1 "LED" V 2198 632 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 2250 750 50  0001 C CNN
+F 3 "~" H 2250 750 50  0001 C CNN
+	1    2250 750 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R Rlpow1
+U 1 1 5FA4B62F
+P 2250 1050
+F 0 "Rlpow1" H 2320 1096 50  0000 L CNN
+F 1 "7k" H 2320 1005 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 2180 1050 50  0001 C CNN
+F 3 "~" H 2250 1050 50  0001 C CNN
+	1    2250 1050
+	-1   0    0    1   
+$EndComp
+Text Label 2250 600  0    50   ~ 0
+24V
+Text Label 2250 1200 0    50   ~ 0
+GND
+$Comp
+L power:GND #PWR01
+U 1 1 5F96EB89
+P 5050 2550
+F 0 "#PWR01" H 5050 2300 50  0001 C CNN
+F 1 "GND" H 5055 2377 50  0000 C CNN
+F 2 "" H 5050 2550 50  0001 C CNN
+F 3 "" H 5050 2550 50  0001 C CNN
+	1    5050 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F7E2F22
+P 5350 2550
+F 0 "#PWR02" H 5350 2300 50  0001 C CNN
+F 1 "GND" H 5355 2377 50  0000 C CNN
+F 2 "" H 5350 2550 50  0001 C CNN
+F 3 "" H 5350 2550 50  0001 C CNN
+	1    5350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED Dlj1
+U 1 1 5F803B99
+P 5400 1700
+F 0 "Dlj1" H 5600 1800 50  0000 R CNN
+F 1 "LED" H 5450 1600 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 5400 1700 50  0001 C CNN
+F 3 "~" H 5400 1700 50  0001 C CNN
+	1    5400 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF3205 Q2
+U 1 1 5FA7E824
+P 5300 3500
+F 0 "Q2" H 5505 3546 50  0000 L CNN
+F 1 "IRF3205" H 5505 3455 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5550 3425 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 5300 3500 50  0001 L CNN
+	1    5300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rpd2
+U 1 1 5FA7E82A
+P 5100 3650
+F 0 "Rpd2" H 4800 3700 50  0000 L CNN
+F 1 "20k" H 4900 3600 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 5030 3650 50  0001 C CNN
+F 3 "~" H 5100 3650 50  0001 C CNN
+	1    5100 3650
+	1    0    0    -1  
+$EndComp
+Text Label 6050 3150 0    50   ~ 0
+24V
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5FA7E831
+P 6250 3150
+F 0 "J2" H 6330 3142 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6330 3051 50  0000 L CNN
+F 2 "HeatController:TerminalBlock_bornier-2_P5.08mm_tight" H 6250 3150 50  0001 C CNN
+F 3 "~" H 6250 3150 50  0001 C CNN
+	1    6250 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rlj2
+U 1 1 5FA7E837
+P 5600 3100
+F 0 "Rlj2" H 5670 3146 50  0000 L CNN
+F 1 "7k" H 5670 3055 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 5530 3100 50  0001 C CNN
+F 3 "~" H 5600 3100 50  0001 C CNN
+	1    5600 3100
+	1    0    0    -1  
+$EndComp
+Text Label 5300 2950 0    50   ~ 0
+24V
+$Comp
+L Device:R Rioc2
+U 1 1 5FA7E83F
+P 3600 3100
+F 0 "Rioc2" V 3700 3000 50  0000 L CNN
+F 1 "400" V 3500 3000 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 3530 3100 50  0001 C CNN
+F 3 "~" H 3600 3100 50  0001 C CNN
+	1    3600 3100
+	0    1    1    0   
+$EndComp
+Text Label 3750 3300 0    50   ~ 0
+GND2
+$Comp
+L Diode:1N4007 D2
+U 1 1 5FA7E846
+P 5900 3100
+F 0 "D2" V 5750 3150 50  0000 L CNN
+F 1 "1N4007" V 5850 3150 50  0000 L CNN
+F 2 "HeatController:DO-214AC" H 5900 2925 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5900 3100 50  0001 C CNN
+	1    5900 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 3250 5400 3250
+Wire Wire Line
+	5400 3250 5400 3300
+Connection ~ 5600 3250
+Wire Wire Line
+	5400 3800 5400 3700
+$Comp
+L EL357N_A__TA_-G:EL357N(A)(TA)-G U_OC2
+U 1 1 5FA7E856
+P 4250 3200
+F 0 "U_OC2" H 4250 3570 50  0000 C CNN
+F 1 "EL357N(A)(TA)-G" H 4250 3479 50  0000 C CNN
+F 2 "libs:SOP254P700X200-4N" H 4250 3200 50  0001 L BNN
+F 3 "IPC-7351B" H 4250 3200 50  0001 L BNN
+F 4 "EL357N_A__TA_-G" H 4250 3200 50  0001 L BNN "Field4"
+F 5 "SOP-4 Everlight" H 4250 3200 50  0001 L BNN "Field5"
+F 6 "Optocoupler [Everlight Electronics] EL357N_A__TA_-G Optocoupler" H 4250 3200 50  0001 L BNN "Field6"
+F 7 "0.10 USD" H 4250 3200 50  0001 L BNN "Field7"
+F 8 "Good" H 4250 3200 50  0001 L BNN "Field8"
+F 9 "Everlight" H 4250 3200 50  0001 L BNN "Field9"
+	1    4250 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 3100 3850 3100
+Connection ~ 3750 3100
+Wire Wire Line
+	3350 3100 3450 3100
+Text Label 4750 3100 0    50   ~ 0
+24V
+$Comp
+L Device:R Roo2
+U 1 1 5FA7E861
+P 4900 3300
+F 0 "Roo2" V 5000 3150 50  0000 L CNN
+F 1 "20k" V 4800 3200 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 4830 3300 50  0001 C CNN
+F 3 "~" H 4900 3300 50  0001 C CNN
+	1    4900 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 3300 5050 3300
+Wire Wire Line
+	5100 3300 5100 3500
+Connection ~ 5100 3500
+Wire Wire Line
+	5600 3250 5900 3250
+Wire Wire Line
+	5900 3250 6050 3250
+Connection ~ 5900 3250
+Wire Wire Line
+	5900 2950 6050 2950
+Wire Wire Line
+	6050 2950 6050 3150
+$Comp
+L power:GND #PWR0109
+U 1 1 5FA7E86F
+P 5100 3800
+F 0 "#PWR0109" H 5100 3550 50  0001 C CNN
+F 1 "GND" H 5105 3627 50  0000 C CNN
+F 2 "" H 5100 3800 50  0001 C CNN
+F 3 "" H 5100 3800 50  0001 C CNN
+	1    5100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 5FA7E875
+P 5400 3800
+F 0 "#PWR0110" H 5400 3550 50  0001 C CNN
+F 1 "GND" H 5405 3627 50  0000 C CNN
+F 2 "" H 5400 3800 50  0001 C CNN
+F 3 "" H 5400 3800 50  0001 C CNN
+	1    5400 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED Dlj2
+U 1 1 5FA7E87B
+P 5450 2950
+F 0 "Dlj2" H 5650 3050 50  0000 R CNN
+F 1 "LED" H 5500 2850 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 5450 2950 50  0001 C CNN
+F 3 "~" H 5450 2950 50  0001 C CNN
+	1    5450 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Transistor_FET:IRF3205 Q3
+U 1 1 5FABCECF
+P 5300 4800
+F 0 "Q3" H 5505 4846 50  0000 L CNN
+F 1 "IRF3205" H 5505 4755 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 5550 4725 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 5300 4800 50  0001 L CNN
+	1    5300 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rpd3
+U 1 1 5FABCED5
+P 5100 4950
+F 0 "Rpd3" H 4800 5000 50  0000 L CNN
+F 1 "20k" H 4900 4900 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 5030 4950 50  0001 C CNN
+F 3 "~" H 5100 4950 50  0001 C CNN
+	1    5100 4950
+	1    0    0    -1  
+$EndComp
+Text Label 6050 4450 0    50   ~ 0
+24V
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5FABCEDC
+P 6250 4450
+F 0 "J3" H 6330 4442 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6330 4351 50  0000 L CNN
+F 2 "HeatController:TerminalBlock_bornier-2_P5.08mm_tight" H 6250 4450 50  0001 C CNN
+F 3 "~" H 6250 4450 50  0001 C CNN
+	1    6250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rlj3
+U 1 1 5FABCEE2
+P 5600 4400
+F 0 "Rlj3" H 5670 4446 50  0000 L CNN
+F 1 "7k" H 5670 4355 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 5530 4400 50  0001 C CNN
+F 3 "~" H 5600 4400 50  0001 C CNN
+	1    5600 4400
+	1    0    0    -1  
+$EndComp
+Text Label 5300 4250 0    50   ~ 0
+24V
+$Comp
+L Device:R Rioc3
+U 1 1 5FABCEE9
+P 3600 4400
+F 0 "Rioc3" V 3700 4300 50  0000 L CNN
+F 1 "400" V 3500 4300 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 3530 4400 50  0001 C CNN
+F 3 "~" H 3600 4400 50  0001 C CNN
+	1    3600 4400
+	0    1    1    0   
+$EndComp
+Text Label 3750 4600 0    50   ~ 0
+GND2
+$Comp
+L Diode:1N4007 D3
+U 1 1 5FABCEF0
+P 5900 4400
+F 0 "D3" V 5750 4450 50  0000 L CNN
+F 1 "1N4007" V 5850 4450 50  0000 L CNN
+F 2 "HeatController:DO-214AC" H 5900 4225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 5900 4400 50  0001 C CNN
+	1    5900 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5600 4550 5400 4550
+Wire Wire Line
+	5400 4550 5400 4600
+Connection ~ 5600 4550
+Wire Wire Line
+	5400 5100 5400 5000
+$Comp
+L EL357N_A__TA_-G:EL357N(A)(TA)-G U_OC3
+U 1 1 5FABCF00
+P 4250 4500
+F 0 "U_OC3" H 4250 4870 50  0000 C CNN
+F 1 "EL357N(A)(TA)-G" H 4250 4779 50  0000 C CNN
+F 2 "libs:SOP254P700X200-4N" H 4250 4500 50  0001 L BNN
+F 3 "IPC-7351B" H 4250 4500 50  0001 L BNN
+F 4 "EL357N_A__TA_-G" H 4250 4500 50  0001 L BNN "Field4"
+F 5 "SOP-4 Everlight" H 4250 4500 50  0001 L BNN "Field5"
+F 6 "Optocoupler [Everlight Electronics] EL357N_A__TA_-G Optocoupler" H 4250 4500 50  0001 L BNN "Field6"
+F 7 "0.10 USD" H 4250 4500 50  0001 L BNN "Field7"
+F 8 "Good" H 4250 4500 50  0001 L BNN "Field8"
+F 9 "Everlight" H 4250 4500 50  0001 L BNN "Field9"
+	1    4250 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4400 3850 4400
+Connection ~ 3750 4400
+Wire Wire Line
+	3350 4400 3450 4400
+Text Label 4750 4400 0    50   ~ 0
+24V
+$Comp
+L Device:R Roo3
+U 1 1 5FABCF0A
+P 4900 4600
+F 0 "Roo3" V 5000 4450 50  0000 L CNN
+F 1 "20k" V 4800 4500 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 4830 4600 50  0001 C CNN
+F 3 "~" H 4900 4600 50  0001 C CNN
+	1    4900 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5100 4600 5050 4600
+Wire Wire Line
+	5100 4600 5100 4800
+Connection ~ 5100 4800
+Wire Wire Line
+	5600 4550 5900 4550
+Wire Wire Line
+	5900 4550 6050 4550
+Connection ~ 5900 4550
+Wire Wire Line
+	5900 4250 6050 4250
+Wire Wire Line
+	6050 4250 6050 4450
+$Comp
+L power:GND #PWR0111
+U 1 1 5FABCF18
+P 5100 5100
+F 0 "#PWR0111" H 5100 4850 50  0001 C CNN
+F 1 "GND" H 5105 4927 50  0000 C CNN
+F 2 "" H 5100 5100 50  0001 C CNN
+F 3 "" H 5100 5100 50  0001 C CNN
+	1    5100 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 5FABCF1E
+P 5400 5100
+F 0 "#PWR0112" H 5400 4850 50  0001 C CNN
+F 1 "GND" H 5405 4927 50  0000 C CNN
+F 2 "" H 5400 5100 50  0001 C CNN
+F 3 "" H 5400 5100 50  0001 C CNN
+	1    5400 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED Dlj3
+U 1 1 5FABCF24
+P 5450 4250
+F 0 "Dlj3" H 5650 4350 50  0000 R CNN
+F 1 "LED" H 5500 4150 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 5450 4250 50  0001 C CNN
+F 3 "~" H 5450 4250 50  0001 C CNN
+	1    5450 4250
+	-1   0    0    1   
+$EndComp
+Text Label 2550 2150 0    50   ~ 0
+D2
+Text Label 2550 2050 0    50   ~ 0
+D1
+Text Label 3300 1850 0    50   ~ 0
+D1
+Text Label 3350 3100 0    50   ~ 0
+D2
+Text Label 3350 4400 0    50   ~ 0
+D5
+$Comp
+L Transistor_FET:IRF3205 Q4
+U 1 1 5FAE722F
+P 9100 2250
+F 0 "Q4" H 9305 2296 50  0000 L CNN
+F 1 "IRF3205" H 9305 2205 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 9350 2175 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 9100 2250 50  0001 L CNN
+	1    9100 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rpd4
+U 1 1 5FAE7235
+P 8900 2400
+F 0 "Rpd4" H 8600 2450 50  0000 L CNN
+F 1 "20k" H 8700 2350 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 8830 2400 50  0001 C CNN
+F 3 "~" H 8900 2400 50  0001 C CNN
+	1    8900 2400
+	1    0    0    -1  
+$EndComp
+Text Label 9850 1900 0    50   ~ 0
+24V
+$Comp
+L Connector:Screw_Terminal_01x02 J4
+U 1 1 5FAE723C
+P 10050 1900
+F 0 "J4" H 10130 1892 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10130 1801 50  0000 L CNN
+F 2 "HeatController:TerminalBlock_bornier-2_P5.08mm_tight" H 10050 1900 50  0001 C CNN
+F 3 "~" H 10050 1900 50  0001 C CNN
+	1    10050 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rlj4
+U 1 1 5FAE7242
+P 9400 1850
+F 0 "Rlj4" H 9470 1896 50  0000 L CNN
+F 1 "7k" H 9470 1805 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 9330 1850 50  0001 C CNN
+F 3 "~" H 9400 1850 50  0001 C CNN
+	1    9400 1850
+	1    0    0    -1  
+$EndComp
+Text Label 9100 1700 0    50   ~ 0
+24V
+$Comp
+L Device:R Rioc4
+U 1 1 5FAE7249
+P 7400 1850
+F 0 "Rioc4" V 7500 1750 50  0000 L CNN
+F 1 "400" V 7300 1750 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 7330 1850 50  0001 C CNN
+F 3 "~" H 7400 1850 50  0001 C CNN
+	1    7400 1850
+	0    1    1    0   
+$EndComp
+Text Label 7550 2050 0    50   ~ 0
+GND2
+$Comp
+L Diode:1N4007 D4
+U 1 1 5FAE7250
+P 9700 1850
+F 0 "D4" V 9550 1900 50  0000 L CNN
+F 1 "1N4007" V 9650 1900 50  0000 L CNN
+F 2 "HeatController:DO-214AC" H 9700 1675 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9700 1850 50  0001 C CNN
+	1    9700 1850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 2000 9200 2000
+Wire Wire Line
+	9200 2000 9200 2050
+Connection ~ 9400 2000
+Wire Wire Line
+	9200 2550 9200 2450
+$Comp
+L EL357N_A__TA_-G:EL357N(A)(TA)-G U_OC4
+U 1 1 5FAE7260
+P 8050 1950
+F 0 "U_OC4" H 8050 2320 50  0000 C CNN
+F 1 "EL357N(A)(TA)-G" H 8050 2229 50  0000 C CNN
+F 2 "libs:SOP254P700X200-4N" H 8050 1950 50  0001 L BNN
+F 3 "IPC-7351B" H 8050 1950 50  0001 L BNN
+F 4 "EL357N_A__TA_-G" H 8050 1950 50  0001 L BNN "Field4"
+F 5 "SOP-4 Everlight" H 8050 1950 50  0001 L BNN "Field5"
+F 6 "Optocoupler [Everlight Electronics] EL357N_A__TA_-G Optocoupler" H 8050 1950 50  0001 L BNN "Field6"
+F 7 "0.10 USD" H 8050 1950 50  0001 L BNN "Field7"
+F 8 "Good" H 8050 1950 50  0001 L BNN "Field8"
+F 9 "Everlight" H 8050 1950 50  0001 L BNN "Field9"
+	1    8050 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 1850 7650 1850
+Connection ~ 7550 1850
+Wire Wire Line
+	7150 1850 7250 1850
+Text Label 8550 1850 0    50   ~ 0
+24V
+$Comp
+L Device:R Roo4
+U 1 1 5FAE726A
+P 8700 2050
+F 0 "Roo4" V 8800 1900 50  0000 L CNN
+F 1 "20k" V 8600 1950 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 8630 2050 50  0001 C CNN
+F 3 "~" H 8700 2050 50  0001 C CNN
+	1    8700 2050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 2050 8850 2050
+Wire Wire Line
+	8900 2050 8900 2250
+Connection ~ 8900 2250
+Wire Wire Line
+	9400 2000 9700 2000
+Wire Wire Line
+	9700 2000 9850 2000
+Connection ~ 9700 2000
+Wire Wire Line
+	9700 1700 9850 1700
+Wire Wire Line
+	9850 1700 9850 1900
+$Comp
+L power:GND #PWR0113
+U 1 1 5FAE7278
+P 8900 2550
+F 0 "#PWR0113" H 8900 2300 50  0001 C CNN
+F 1 "GND" H 8905 2377 50  0000 C CNN
+F 2 "" H 8900 2550 50  0001 C CNN
+F 3 "" H 8900 2550 50  0001 C CNN
+	1    8900 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 5FAE727E
+P 9200 2550
+F 0 "#PWR0114" H 9200 2300 50  0001 C CNN
+F 1 "GND" H 9205 2377 50  0000 C CNN
+F 2 "" H 9200 2550 50  0001 C CNN
+F 3 "" H 9200 2550 50  0001 C CNN
+	1    9200 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED Dlj4
+U 1 1 5FAE7284
+P 9250 1700
+F 0 "Dlj4" H 9450 1800 50  0000 R CNN
+F 1 "LED" H 9300 1600 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 9250 1700 50  0001 C CNN
+F 3 "~" H 9250 1700 50  0001 C CNN
+	1    9250 1700
+	-1   0    0    1   
+$EndComp
+Text Label 7150 1850 0    50   ~ 0
+D6
+Text Label 9450 3200 0    50   ~ 0
+24V
+$Comp
+L Transistor_FET:IRF3205 Q5
+U 1 1 5FAF5607
+P 9100 3550
+F 0 "Q5" H 9305 3596 50  0000 L CNN
+F 1 "IRF3205" H 9305 3505 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 9350 3475 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 9100 3550 50  0001 L CNN
+	1    9100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rpd5
+U 1 1 5FAF560D
+P 8900 3700
+F 0 "Rpd5" H 8600 3750 50  0000 L CNN
+F 1 "20k" H 8700 3650 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 8830 3700 50  0001 C CNN
+F 3 "~" H 8900 3700 50  0001 C CNN
+	1    8900 3700
+	1    0    0    -1  
+$EndComp
+Text Label 9850 3200 0    50   ~ 0
+24V
+$Comp
+L Connector:Screw_Terminal_01x02 J5
+U 1 1 5FAF5614
+P 10050 3200
+F 0 "J5" H 10130 3192 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10130 3101 50  0000 L CNN
+F 2 "HeatController:TerminalBlock_bornier-2_P5.08mm_tight" H 10050 3200 50  0001 C CNN
+F 3 "~" H 10050 3200 50  0001 C CNN
+	1    10050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rlj5
+U 1 1 5FAF561A
+P 9400 3150
+F 0 "Rlj5" H 9470 3196 50  0000 L CNN
+F 1 "7k" H 9470 3105 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 9330 3150 50  0001 C CNN
+F 3 "~" H 9400 3150 50  0001 C CNN
+	1    9400 3150
+	1    0    0    -1  
+$EndComp
+Text Label 9100 3000 0    50   ~ 0
+24V
+$Comp
+L Device:R Rioc5
+U 1 1 5FAF5621
+P 7400 3150
+F 0 "Rioc5" V 7500 3050 50  0000 L CNN
+F 1 "400" V 7300 3050 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 7330 3150 50  0001 C CNN
+F 3 "~" H 7400 3150 50  0001 C CNN
+	1    7400 3150
+	0    1    1    0   
+$EndComp
+Text Label 7550 3350 0    50   ~ 0
+GND2
+$Comp
+L Diode:1N4007 D5
+U 1 1 5FAF5628
+P 9700 3150
+F 0 "D5" V 9550 3200 50  0000 L CNN
+F 1 "1N4007" V 9650 3200 50  0000 L CNN
+F 2 "HeatController:DO-214AC" H 9700 2975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9700 3150 50  0001 C CNN
+	1    9700 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 3300 9200 3300
+Wire Wire Line
+	9200 3300 9200 3350
+Connection ~ 9400 3300
+Wire Wire Line
+	9200 3850 9200 3750
+$Comp
+L EL357N_A__TA_-G:EL357N(A)(TA)-G U_OC5
+U 1 1 5FAF5638
+P 8050 3250
+F 0 "U_OC5" H 8050 3620 50  0000 C CNN
+F 1 "EL357N(A)(TA)-G" H 8050 3529 50  0000 C CNN
+F 2 "libs:SOP254P700X200-4N" H 8050 3250 50  0001 L BNN
+F 3 "IPC-7351B" H 8050 3250 50  0001 L BNN
+F 4 "EL357N_A__TA_-G" H 8050 3250 50  0001 L BNN "Field4"
+F 5 "SOP-4 Everlight" H 8050 3250 50  0001 L BNN "Field5"
+F 6 "Optocoupler [Everlight Electronics] EL357N_A__TA_-G Optocoupler" H 8050 3250 50  0001 L BNN "Field6"
+F 7 "0.10 USD" H 8050 3250 50  0001 L BNN "Field7"
+F 8 "Good" H 8050 3250 50  0001 L BNN "Field8"
+F 9 "Everlight" H 8050 3250 50  0001 L BNN "Field9"
+	1    8050 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 3150 7650 3150
+Connection ~ 7550 3150
+Text Label 8550 3150 0    50   ~ 0
+24V
+$Comp
+L Device:R Roo5
+U 1 1 5FAF5641
+P 8700 3350
+F 0 "Roo5" V 8800 3200 50  0000 L CNN
+F 1 "20k" V 8600 3250 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 8630 3350 50  0001 C CNN
+F 3 "~" H 8700 3350 50  0001 C CNN
+	1    8700 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 3350 8850 3350
+Wire Wire Line
+	8900 3350 8900 3550
+Connection ~ 8900 3550
+Wire Wire Line
+	9400 3300 9700 3300
+Wire Wire Line
+	9700 3300 9850 3300
+Connection ~ 9700 3300
+Wire Wire Line
+	9700 3000 9850 3000
+Wire Wire Line
+	9850 3000 9850 3200
+$Comp
+L power:GND #PWR0115
+U 1 1 5FAF564F
+P 8900 3850
+F 0 "#PWR0115" H 8900 3600 50  0001 C CNN
+F 1 "GND" H 8905 3677 50  0000 C CNN
+F 2 "" H 8900 3850 50  0001 C CNN
+F 3 "" H 8900 3850 50  0001 C CNN
+	1    8900 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5FAF5655
+P 9200 3850
+F 0 "#PWR0116" H 9200 3600 50  0001 C CNN
+F 1 "GND" H 9205 3677 50  0000 C CNN
+F 2 "" H 9200 3850 50  0001 C CNN
+F 3 "" H 9200 3850 50  0001 C CNN
+	1    9200 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED Dlj5
+U 1 1 5FAF565B
+P 9250 3000
+F 0 "Dlj5" H 9450 3100 50  0000 R CNN
+F 1 "LED" H 9300 2900 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 9250 3000 50  0001 C CNN
+F 3 "~" H 9250 3000 50  0001 C CNN
+	1    9250 3000
+	-1   0    0    1   
+$EndComp
+Text Label 9450 4450 0    50   ~ 0
+24V
+$Comp
+L Transistor_FET:IRF3205 Q6
+U 1 1 5FAFDAF1
+P 9100 4800
+F 0 "Q6" H 9305 4846 50  0000 L CNN
+F 1 "IRF3205" H 9305 4755 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Vertical" H 9350 4725 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 9100 4800 50  0001 L CNN
+	1    9100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rpd6
+U 1 1 5FAFDAF7
+P 8900 4950
+F 0 "Rpd6" H 8600 5000 50  0000 L CNN
+F 1 "20k" H 8700 4900 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 8830 4950 50  0001 C CNN
+F 3 "~" H 8900 4950 50  0001 C CNN
+	1    8900 4950
+	1    0    0    -1  
+$EndComp
+Text Label 9850 4450 0    50   ~ 0
+24V
+$Comp
+L Connector:Screw_Terminal_01x02 J6
+U 1 1 5FAFDAFE
+P 10050 4450
+F 0 "J6" H 10130 4442 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 10130 4351 50  0000 L CNN
+F 2 "HeatController:TerminalBlock_bornier-2_P5.08mm_tight" H 10050 4450 50  0001 C CNN
+F 3 "~" H 10050 4450 50  0001 C CNN
+	1    10050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R Rlj6
+U 1 1 5FAFDB04
+P 9400 4400
+F 0 "Rlj6" H 9470 4446 50  0000 L CNN
+F 1 "7k" H 9470 4355 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 9330 4400 50  0001 C CNN
+F 3 "~" H 9400 4400 50  0001 C CNN
+	1    9400 4400
+	1    0    0    -1  
+$EndComp
+Text Label 9100 4250 0    50   ~ 0
+24V
+$Comp
+L Device:R Rioc6
+U 1 1 5FAFDB0B
+P 7400 4400
+F 0 "Rioc6" V 7500 4300 50  0000 L CNN
+F 1 "400" V 7300 4300 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 7330 4400 50  0001 C CNN
+F 3 "~" H 7400 4400 50  0001 C CNN
+	1    7400 4400
+	0    1    1    0   
+$EndComp
+Text Label 7550 4600 0    50   ~ 0
+GND2
+$Comp
+L Diode:1N4007 D6
+U 1 1 5FAFDB12
+P 9700 4400
+F 0 "D6" V 9550 4450 50  0000 L CNN
+F 1 "1N4007" V 9650 4450 50  0000 L CNN
+F 2 "HeatController:DO-214AC" H 9700 4225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9700 4400 50  0001 C CNN
+	1    9700 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9400 4550 9200 4550
+Wire Wire Line
+	9200 4550 9200 4600
+Connection ~ 9400 4550
+Wire Wire Line
+	9200 5100 9200 5000
+$Comp
+L EL357N_A__TA_-G:EL357N(A)(TA)-G U_OC6
+U 1 1 5FAFDB22
+P 8050 4500
+F 0 "U_OC6" H 8050 4870 50  0000 C CNN
+F 1 "EL357N(A)(TA)-G" H 8050 4779 50  0000 C CNN
+F 2 "libs:SOP254P700X200-4N" H 8050 4500 50  0001 L BNN
+F 3 "IPC-7351B" H 8050 4500 50  0001 L BNN
+F 4 "EL357N_A__TA_-G" H 8050 4500 50  0001 L BNN "Field4"
+F 5 "SOP-4 Everlight" H 8050 4500 50  0001 L BNN "Field5"
+F 6 "Optocoupler [Everlight Electronics] EL357N_A__TA_-G Optocoupler" H 8050 4500 50  0001 L BNN "Field6"
+F 7 "0.10 USD" H 8050 4500 50  0001 L BNN "Field7"
+F 8 "Good" H 8050 4500 50  0001 L BNN "Field8"
+F 9 "Everlight" H 8050 4500 50  0001 L BNN "Field9"
+	1    8050 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4400 7650 4400
+Connection ~ 7550 4400
+Text Label 8550 4400 0    50   ~ 0
+24V
+$Comp
+L Device:R Roo6
+U 1 1 5FAFDB2B
+P 8700 4600
+F 0 "Roo6" V 8800 4450 50  0000 L CNN
+F 1 "20k" V 8600 4500 50  0000 L CNN
+F 2 "HeatController:R_0805_H" V 8630 4600 50  0001 C CNN
+F 3 "~" H 8700 4600 50  0001 C CNN
+	1    8700 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8900 4600 8850 4600
+Wire Wire Line
+	8900 4600 8900 4800
+Connection ~ 8900 4800
+Wire Wire Line
+	9400 4550 9700 4550
+Wire Wire Line
+	9700 4550 9850 4550
+Connection ~ 9700 4550
+Wire Wire Line
+	9700 4250 9850 4250
+Wire Wire Line
+	9850 4250 9850 4450
+$Comp
+L power:GND #PWR0117
+U 1 1 5FAFDB39
+P 8900 5100
+F 0 "#PWR0117" H 8900 4850 50  0001 C CNN
+F 1 "GND" H 8905 4927 50  0000 C CNN
+F 2 "" H 8900 5100 50  0001 C CNN
+F 3 "" H 8900 5100 50  0001 C CNN
+	1    8900 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 5FAFDB3F
+P 9200 5100
+F 0 "#PWR0118" H 9200 4850 50  0001 C CNN
+F 1 "GND" H 9205 4927 50  0000 C CNN
+F 2 "" H 9200 5100 50  0001 C CNN
+F 3 "" H 9200 5100 50  0001 C CNN
+	1    9200 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED Dlj6
+U 1 1 5FAFDB45
+P 9250 4250
+F 0 "Dlj6" H 9450 4350 50  0000 R CNN
+F 1 "LED" H 9300 4150 50  0000 R CNN
+F 2 "LEDs:LED_0805" H 9250 4250 50  0001 C CNN
+F 3 "~" H 9250 4250 50  0001 C CNN
+	1    9250 4250
+	-1   0    0    1   
+$EndComp
+Text Label 2800 950  0    50   ~ 0
+GND
+Text Label 7250 3150 0    50   ~ 0
+D7
+Text Label 7250 4400 0    50   ~ 0
+D8
+Text Label 1550 2150 0    50   ~ 0
+D5
+Text Label 1550 2250 0    50   ~ 0
+D6
+Text Label 1550 2350 0    50   ~ 0
+D7
+Text Label 1550 2450 0    50   ~ 0
+D8
+$Comp
+L power:GND #PWR0101
+U 1 1 5F9AF667
+P 1100 2850
+F 0 "#PWR0101" H 1100 2600 50  0001 C CNN
+F 1 "GND" H 1105 2677 50  0000 C CNN
+F 2 "" H 1100 2850 50  0001 C CNN
+F 3 "" H 1100 2850 50  0001 C CNN
+	1    1100 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L HCLib:LMR14010ADDC U2
+U 1 1 5F9AE165
+P 2050 6450
+F 0 "U2" H 2050 6965 50  0000 C CNN
+F 1 "LMR14010ADDC" H 2050 6874 50  0000 C CNN
+F 2 "HeatController:LRM14010A" H 2050 6450 50  0001 C CNN
+F 3 "" H 2050 6450 50  0001 C CNN
+	1    2050 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F9B90E7
+P 1600 6450
+F 0 "#PWR0103" H 1600 6200 50  0001 C CNN
+F 1 "GND" H 1605 6277 50  0000 C CNN
+F 2 "" H 1600 6450 50  0001 C CNN
+F 3 "" H 1600 6450 50  0001 C CNN
+	1    1600 6450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

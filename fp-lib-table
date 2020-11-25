@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name libs)(type KiCad)(uri ${KIPRJMOD}/libs)(options "")(descr ""))
+  (lib (name HeatController)(type KiCad)(uri ${KIPRJMOD}/HeatController.pretty)(options "")(descr ""))
+)
