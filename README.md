@@ -20,3 +20,7 @@ The project was initiated when the existing, commercial controller for the floor
 
 ## Model
 <img src="https://hvrd.com/images/heatcon/model.png" width="600">
+
+## PCB
+<img src="https://hvrd.com/images/heatcon/stack.jpeg" width="600">
+<img src="https://hvrd.com/images/heatcon/testbench.jpeg" width="400">
