@@ -12,5 +12,11 @@ The project was initiated when the existing, commercoil controller for the floor
 * Optionally separate ground and power for MCU and actuators
 * Should work well for other actuators 6V-30V, up to 1A/channel
 
-![Schema](https://hvrd.com/images/heatcon/schematic.svg)
+## Schema
+<img src="https://hvrd.com/images/heatcon/schematic.svg" width="800">
 
+## Layout
+<img src="https://hvrd.com/images/heatcon/layout.png" width="600">
+
+## Model
+<img src="https://hvrd.com/images/heatcon/model.png" width="600">
