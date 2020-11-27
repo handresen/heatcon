@@ -10,7 +10,7 @@ The project was initiated when the existing, commercial controller for the floor
 * No moving parts (ie no magnetic relays)
 * EPS8266 powers opto couplers, mosfets drive the actuators
 * Optionally separate ground and power for MCU and actuators
-* Should work well for other actuators 6V-30V, up to 1A/channel
+* Should work well for other actuators 6V-30V, up to 2.5A/channel (limited by PCB trace widths, more with thicker Cu)
 
 ## Schema
 <img src="https://hvrd.com/images/heatcon/schematic.svg" width="800">
