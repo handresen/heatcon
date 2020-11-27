@@ -6,4 +6,6 @@ Simple controller for water based floor heating
 * Solid state switches (mosfets)
 * Optocouplers to isolate MCU from 24V
 
+![Schema](https://hvrd.com/images/heatcon/schematic.svg)
+
 
