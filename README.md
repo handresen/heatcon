@@ -1,6 +1,6 @@
 # HeatCon
 Simple controller for water based floor heating.
-The project was initiated when the existing, commercoil controller for the floor heating in our house broke down. I wanted the ability to control floor heating remotely from mobile and web. A prototype has been up and running for six weeks now without any problems.
+The project was initiated when the existing, commercial controller for the floor heating in our house broke down. I wanted the ability to control floor heating remotely from mobile and web. A prototype has been up and running for six weeks now without any problems.
 
 ## Summary
 * Solid state switches (mosfets)
