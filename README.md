@@ -22,5 +22,6 @@ The project was initiated when the old controller for the floor heating in our h
 <img src="https://hvrd.com/images/heatcon/model.png" width="600">
 
 ## PCB
+PCB by https://jlcpcb.com/, ENIG with black solder mask
 <img src="https://hvrd.com/images/heatcon/stack.jpeg" width="600">
 <img src="https://hvrd.com/images/heatcon/testbench.jpeg" width="400">
