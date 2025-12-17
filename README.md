@@ -13,16 +13,17 @@ The project was initiated when the old controller for the floor heating in our h
 * Should work well for other actuators 6V-30V, up to 2.5A/channel (limited by PCB trace widths, more with thicker Cu)
 
 ## Schema
-<img src="https://hvrd.com/images/heatcon/schematic.svg" width="800">
+<img src="images/schematic.svg" width="600">
 
 ## Layout
-<img src="https://hvrd.com/images/heatcon/layout.png" width="600">
+<img src="images/layout.png" width="600">
 
 ## Model
-<img src="https://hvrd.com/images/heatcon/model.png" width="600">
+<img src="images/model.png" width="600">
 
 ## PCB
 PCB by https://jlcpcb.com/, ENIG with black solder mask
 <br/><br/>
-<img src="https://hvrd.com/images/heatcon/stack.jpeg" width="600">
-<img src="https://hvrd.com/images/heatcon/testbench.jpeg" width="400">
+<img src="images/stack.jpeg" width="600">
+<br/>
+<img src="images/testbench.jpeg" width="400">
